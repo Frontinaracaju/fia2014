@@ -1,0 +1,969 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+@font-face {
+    font-family: 'aventuraregular';
+    src: url('aventura/aventura-webfont.eot');
+    src: url('aventura/aventura-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aventura/aventura-webfont.woff') format('woff'),
+         url('aventura/aventura-webfont.ttf') format('truetype'),
+         url('aventura/aventura-webfont.svg#aventuraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    font-family: 'aventuraregular';
+    font-weight: lighter;
+    background: url(../img/moulin.png);
+}
+a,
+a img,
+button{
+    text-decoration: none;
+    -webkit-transition:  all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition:  all 0.2s ease-out 0s;
+    -ms-transition:  all 0.2s ease-out 0s;
+    transition:  all 0.2s ease-out 0s;
+}
+a:hover{
+    text-decoration: none; 
+}
+.container{
+    width: 980px;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.main{
+    position: relative;
+    background: url(../img/moulin.png);
+    overflow: hidden;
+}
+.scrollblock {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 900px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.relative{
+    position: relative;
+}
+.redes-topo{
+    position: absolute;
+    top: 46px;
+    right: 51px;
+}
+.redes-topo ul{
+    margin: 0px;
+}
+.redes-topo li{
+    float: left;
+    list-style: none;
+    margin-right: 2px;
+}
+.redes-topo li a:hover img{
+    opacity: 0.67;
+}
+.btnpadrao{
+    cursor: pointer;
+    font-family: "aventuraregular";
+    border-radius: 4px;
+    font-size: 20px;
+    width: 182px;
+    height: 46px;
+    line-height: 46px;
+    color: #3e3e2f;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background: #f8f0ad; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f8f0ad 0%, #ecd658 22%, #dfbb28 91%, #72682e 92%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f0ad), color-stop(22%,#ecd658), color-stop(91%,#dfbb28), color-stop(92%,#72682e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f8f0ad 0%,#ecd658 22%,#dfbb28 91%,#72682e 92%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f8f0ad 0%,#ecd658 22%,#dfbb28 91%,#72682e 92%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f8f0ad 0%,#ecd658 22%,#dfbb28 91%,#72682e 92%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f8f0ad 0%,#ecd658 22%,#dfbb28 91%,#72682e 92%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f0ad', endColorstr='#72682e',GradientType=0 ); /* IE6-9 */
+}
+.btnpadrao:hover{
+    opacity: 0.75;
+}
+.wrapper1{
+    height: 900px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background: url(../img/bg-wrapper1.jpg) center;
+    background-repeat: no-repeat;
+}
+.btn-palestrar{
+    position: absolute;
+    left: 247px;
+    top: 49px;
+}
+.logofia{
+    position: absolute;
+    left: 464px;
+    top: 24px;
+}
+.logo{
+    width: 42px;
+    height: 85px;
+    overflow: hidden;
+    text-indent: 70px;
+    background: url(../img/logofia.png);
+}
+.btn-patrocinar{
+    position: absolute;
+    left: 549px;
+    top: 49px;
+}
+.selofia{
+    width: 311px;
+    height: 367px;
+    left: 336px;
+    top: 149px;
+    position: absolute;
+}
+.slogan{
+    width: 440px;
+    top: 529px;
+    left: 277px;
+    position: absolute;
+    -webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+    writing-mode: lr-tb;
+}
+.slogan h2{
+    font-size: 39px;
+    margin: 0;
+    text-shadow:-1px 3px 2px #544d22;
+}
+.title{
+    color: #f5f3ba;
+}
+h3{
+    font-size: 30px;
+    line-height: 33px;
+    margin: 0;
+    text-shadow:-1px 3px 1px #544d22;
+}
+h2{
+    font-size: 38px;
+    line-height: 33px;
+    margin: 0;
+    text-shadow:-1px 3px 1px #544d22;
+}
+.date{
+    width: 473px;
+    height: 143px;
+    left: 252px;
+    top: 586px;
+    background: url(../img/bgdata.png) no-repeat;
+    position: absolute;
+}
+.date .h2{
+    font-size: 30px;
+    margin-left: 59px;
+    margin-top: 40px;
+    -webkit-transform: rotate(349deg);
+    -moz-transform: rotate(349deg);
+    -o-transform: rotate(349deg);
+    writing-mode: lr-tb;
+}
+.wrapper2{
+    width: 100%;
+    position: relative !important;
+    height: 980px;
+    margin: 0;
+}
+.wrapper2 .title{
+    position: relative;
+    z-index: 888;
+}
+.wrapper2 .title h2{
+    margin-left: 30px;
+}
+.scrollblock{
+    margin: 0;
+    width: 100%;
+    height: 600px;
+}
+.bgfogo{
+    width: 1480px;
+    height: 1225px;
+    background: url(../img/bg-fogo.png);
+    position: absolute;
+    z-index: 2;
+    top: -230px;
+    left: -200px;
+}
+.bgcode{
+    width: 1860px;
+    height:730px;
+    background: url(../img/bgcode.png);
+    position: absolute;
+    left: -500px;
+    top: -115px;
+    z-index: 0;
+}
+.html5{
+    width: 340px;
+    height: 392px;
+    position: absolute;
+    left: -131px;
+    top: -233px;
+    background: url(../img/html5.png);
+    z-index: 0;
+}
+.videoaway{
+    width: 980px;
+    height: 571px;
+    background: white;
+    position: absolute;
+    top: 98px;
+    z-index: 9;
+    left: 0px;
+}
+.frase{
+    width: 980px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+}
+.css3{
+    width: 334px;
+    height: 343px;
+    position: absolute;
+    background: url(../img/css3.png);
+    z-index: 1;
+    left: -223px;
+    top: -54px;
+}
+.guitar{
+    width: 865px;
+    height: 761px;
+    position: absolute;
+    background: url(../img/guitarra.png);
+    z-index: 0;
+    left: 522px;
+    top: -310px;
+}
+.iconejs{
+    width: 273px;
+    height: 271px;
+    position: absolute;
+    z-index: 10;
+    background: url(../img/js.png);
+    left: 869px;
+    top: 513px;
+}
+.logofia1{
+    width: 118px;
+    height: 167px;
+    background: url(../img/logofiavideo.png);
+    position: absolute;
+    z-index: 7;
+    left: 1041px;
+    top: 57px;
+}
+.logofia2{
+    width: 93px;
+    height: 109px;
+    background: url(../img/logofia2.png);
+    position: absolute;
+    z-index: 18;
+    left: -71px;
+    top: 312px;
+}
+.faixa-preco{
+    width: 490px;
+    height: 90px;
+    position: absolute;
+    background: url(../img/faixa-promocao.png) top no-repeat;
+    top: 706px;
+    left: 251px;
+    z-index: 10;
+}
+.faixa-preco p{
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow:1px 2px 0px #000000;
+}
+.btncompra{
+    width: 401px;
+    height: 80px;
+    position: absolute;
+    top: 844px;
+    z-index: 12;
+    left: 50%;
+    margin-left: -200px;
+}
+.btncompra a{
+    display: block;
+}
+.btncompra a:hover img{
+    opacity: 0.77;
+
+}
+.wrapper3{
+    min-height: 569px;
+    position: relative;
+    width: 100%;
+}
+.imggaleria{
+    position: absolute;
+    left: -104px;
+    top: 0;
+    width: 679px;
+    height: 676px;
+    z-index: 2;
+    background: url(../img/imggaleria2.png);
+}
+.frasegaleria{
+    width: 552px;
+    top: 111px;
+    left: 432px;
+    z-index: 5;
+    position: absolute;
+    -webkit-transform: rotate(354deg);
+    -moz-transform: rotate(354deg);
+    -o-transform: rotate(354deg);
+    writing-mode: lr-tb;
+}
+.fotogaleria{
+    width: 500px;
+    height: 372px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+    z-index: 5;
+    -webkit-transform: rotate(354deg);
+    -moz-transform: rotate(354deg);
+    -o-transform: rotate(354deg);
+    writing-mode: lr-tb;
+}
+.fotopadrao{
+    width: 111px;
+    height: 111px;
+}
+.fotogaleria a:hover img{
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+
+    -moz-box-shadow: 0px 0px 20px #b9af95;
+    -webkit-box-shadow: 0px 0px 20px #b9af95;
+    box-shadow: 0px 0px 20px #b9af95;
+}
+.escudo{
+    width: 158px;
+    height: 230px;
+    position: absolute;
+    left: 274px;
+    z-index: 0;
+    top: 0;
+    background: url(../img/escudo.png);
+}
+.camera{
+    width: 263px;  
+    height: 203px;
+    background: url(../img/camera.png);
+    position: absolute;
+    left: 160px;
+    top: 388px;
+    z-index: 10;
+}
+.gfotos{
+    margin-top: 20px;
+    width: 240px;
+    min-height: 111px;
+}
+.g-left{
+    width: 240px;
+    float: left;
+    height: 372px;
+}
+.g-right{
+    width: 240px;
+    float: right;
+    height: 372px;
+}
+
+.wrapper4{
+    min-height: 838px;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper4 h2{
+    position: absolute;
+    z-index: 200;
+    left: 50%;
+    margin-left: -408px;
+    top: 200px;
+    -webkit-transform: rotate(357deg);
+    -moz-transform: rotate(357deg);
+    -o-transform: rotate(357deg);
+    writing-mode: lr-tb;
+}
+.fotolocal{
+    width:100%;
+    left: -10px;
+    position: absolute;
+    top: 250px;
+    height: 432px;
+    z-index: 10;
+    background: url(../img/foto-local.jpg);
+    background-size: 100%;
+    -webkit-transform: rotate(358deg);
+    -moz-transform: rotate(358deg);
+    -o-transform: rotate(358deg);
+    writing-mode: lr-tb;
+}
+.fogolocal{
+    position: absolute;
+    left: -10px;
+    top: 66px;
+    width: 102%;
+    height: 315px;
+    z-index: 0;
+    background: url(../img/fogolocal.png);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    writing-mode: lr-tb;
+}
+.fogolocal2{
+    position: absolute;
+    left: -10px;
+    top: 35px;
+    width: 102%;
+    height: 315px;
+    z-index: 15;
+    background: url(../img/fogolocal.png);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    writing-mode: lr-tb;
+}
+.bg-frase-local{
+    background: url(../img/bg-frase-local.png);
+    width: 642px;
+    height: 99px;
+    position: absolute;
+    top: 634px;
+    z-index: 20;
+    left: 50%;
+    margin-left: -321px;
+}
+.bg-frase-local h3{
+    color: #903207;
+    font-size: 28px;
+    margin: 28px 0 0 66px;
+    text-shadow:0px 1px 5px #ffb60d;
+    color: #903207;
+    -webkit-transform: rotate(356deg);
+    -moz-transform: rotate(356deg);
+    -o-transform: rotate(356deg);
+    writing-mode: lr-tb;
+}
+.raio1{
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: 10px;
+    width: 586px;
+    height: 691px;
+    background: url(../img/raio1.png);
+}
+.raio2{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 586px;
+    height: 691px;
+    background: url(../img/raio1.png);
+}
+.raio3{
+    position: absolute;
+    z-index: 20;
+    bottom: 30px;
+    left: 50%;
+    margin-left: 490px;
+    width: 179px;
+    height: 239px;
+    background: url(../img/raio2.png);
+}
+.raio4{
+    position: absolute;
+    z-index: 20;
+    top: 223px;
+    left: 50%;
+    margin-left: -498px;
+    width: 87px;
+    height: 112px;
+    background: url(../img/raio3.png);
+}
+.wrapper5{
+    min-height: 301px;
+    margin-top: -90px;
+    overflow: hidden;
+}
+.quemfaz{
+    position: absolute;
+    left: 50%;
+    margin-left: -417px;
+    top: 50px;
+    color: #fbe664;
+    -webkit-transform: rotate(356deg);
+    -moz-transform: rotate(356deg);
+    -o-transform: rotate(356deg);
+    writing-mode: lr-tb;
+}
+.firefooter{
+    position: absolute;
+    bottom: -10px;
+    background: url(../img/firefooter.png) left no-repeat;
+    height: 256px;
+    left: 50%;
+    margin-left: -510px;
+    z-index: 1;
+    width: 800px;
+}
+.logofiafooter{
+    position: absolute;
+    bottom: 0;
+    background: url(../img/logofooter.png) right no-repeat;
+    height: 131px;
+    left: 50%;
+    margin-left: 175px;
+    z-index: 1;
+    width: 355px;
+}
+.fotoorg{
+    width: 268px;
+    height: 175px;
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 0;
+    background: url(../img/foto-org.png);
+    z-index: 3;
+}
+.raiof1{
+    width: 240px;
+    height: 328px;
+    position: absolute;
+    left: 50%;
+    bottom: -140px;
+    margin-left: -137px;
+    z-index: 2;
+    background: url(../img/raiof1.png);
+}
+.raiof2{
+    width: 240px;
+    height: 328px;
+    position: absolute;
+    left: 50%;
+    bottom: -188px;
+    margin-left: -177px;
+    z-index: 2;
+    background: url(../img/raiof2.png);
+}
+.italo{
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    text-align: right;
+    left: 50%;
+    top: 130px;
+    margin-left: -330px;
+    z-index: 10;
+}
+.julio{
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    text-align: left;
+    left: 50%;
+    top: 130px;
+    margin-left: 100px;
+    z-index: 10;
+}
+.italo h3,
+.julio h3{
+    font-size: 24px;
+    color: #fbe664;
+}
+.italo p,
+.julio p{
+    font-size: 12px;
+    color: #fff;
+}
+.redesf2{
+    width: 92px;
+    height: 27px;
+    margin: -1px 0 0 -1px;
+    overflow: hidden;
+}
+.redesf2 li{
+    float: left;
+    margin-right: 3px;
+    width: 27px;
+    height: 27px;
+    list-style: none;
+    -webkit-transition:  all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition:  all 0.2s ease-out 0s;
+    -ms-transition:  all 0.2s ease-out 0s;
+    transition:  all 0.2s ease-out 0s;
+}
+.redesf2 li:hover{
+    opacity: 0.70;
+}
+.redesf2 li a{
+    display: block;
+    height: 27px;
+}
+
+.redesf{
+    width: 92px;
+    height: 27px;
+    margin: -1px 0 0 85px;
+    overflow: hidden;
+}
+.redesf li{
+    float: left;
+    margin-right: 3px;
+    width: 27px;
+    height: 27px;
+    list-style: none;
+    overflow: hidden;
+    display: block;
+    -webkit-transition:  all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition:  all 0.2s ease-out 0s;
+    -ms-transition:  all 0.2s ease-out 0s;
+    transition:  all 0.2s ease-out 0s;
+}
+.redesf li:hover{
+    opacity: 0.70;
+}
+.redesf li a{
+    display: block;
+    height: 27px;
+}
+
+.twitter{
+    background: url(../img/twitter.png);
+    overflow: hidden;
+    text-indent: 222px;
+}
+.facebook{
+    background: url(../img/facebook.png);
+    overflow: hidden;
+    text-indent: 222px;
+}
+.email{
+    background: url(../img/email.png);
+    overflow: hidden;
+    text-indent: 299px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,17 @@
+/* TEAM */
+
+Developer & Designer: Ítalo Waxman & Julio Cezar
+Site: https://www.frontinaracaju.com.br
+Facebook: @frontinaracaju
+Location: Aracaju / Sergipe
+
+Designer: Ítalo Waxman
+Site: www.frontinaracaju.com.br
+Location: Aracaju/SE
+
+/* SITE */
+
+Last Update: 2014/04/07
+Standards: HTML5, CSS3
+Components: jQuery, Html5, css3
+Software: Dreamwaver cc, Sublime,
