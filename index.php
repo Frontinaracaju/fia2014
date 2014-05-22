@@ -10,3 +10,4 @@ ob_start();
 require dirname(__FILE__).'/includes/main.php';
 
 $content = ob_get_contents();
+echo $content;
